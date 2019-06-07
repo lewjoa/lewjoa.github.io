@@ -96,12 +96,6 @@ body
 /*-------------------------------------FEATURES TAB----------------------------------------*/
 
 
-/*
-#prev
-{
-    justify-content: center
-}*/
-
 .container-row
 {
     font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
@@ -117,7 +111,7 @@ body
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
-
+/*----todo make flex wrap whole container instead og one by one --- */
 .feature
 {
     font-size: 1.25rem;
@@ -139,30 +133,38 @@ body
 #features h3
 {
     font-size: 1.75rem;
+    text-align: left;
+    padding-left: 5rem;
 }
 
 #features p
 {
+    font-size: 1.25rem;
     font-weight: 300;
-    max-width: 25rem;
+    text-align: left;
+    max-width: 30rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    
 }
-
-
 
 #features .container-row
 {
     background-color: white;
     margin-top: 0px;
+    margin-bottom: 0px;
     flex-wrap: wrap-reverse;
 }
 
-#features #noreverse
+#noreverse
 {
     flex-wrap: wrap;
 }
+
+/*----todo flex description and img to 50% size --- */
 #features .container-row .description
 {
-    flex: 1 0 0;
+    flex: 1 0 0 ;
     
 }
 
@@ -180,6 +182,7 @@ body
     flex-wrap: wrap;
 }
 
+/*----todo make flex wrap whole container instead og one by one --- */
 #people img
 {
     border-radius: 50%;
@@ -193,6 +196,9 @@ body
 }
 
 /*-------------------------------------PEOPLE TAB-------------------------------------*/
+/*-------------------------------------W-------------------------------------*/
+
+/*-------------------------------------PEOPLE TAB-------------------------------------*/
 /*-------------------------------------FOOTER-------------------------------------*/
 #footer 
 {
@@ -200,25 +206,34 @@ body
     margin-right: 15rem;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
-
-#footer #nav
+#about
 {
-    margin-top: 0px;
+    align-content: center;
+}
+#nav
+{
     color: dodgerblue;
-    margin-right: 1rem;
     flex-wrap: nowrap;
+    margin: 0rem;
+    text-align: left!important;
+    margin-bottom: 0rem;
 }
 
-
-#footer #social-media
+#nav h5
+{
+    font-weight: 400;    
+    margin-top: 0rem;
+}
+#social-media
 {
     height: 5rem;
     margin-top: 0rem;
     
 }
 
-#footer #social-media img
+#social-media img
 {
     margin-right: 0.5rem;
     margin-left: 0.5rem;
