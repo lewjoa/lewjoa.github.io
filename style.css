@@ -63,7 +63,7 @@ body
     color: white;
 }
 
-#input-container h1
+.image-container > .container-column > h1
 {
     max-width: 37rem;
 }
@@ -72,23 +72,25 @@ form
 {
     display: flex;
     flex-wrap:wrap;
-    flex-direction: column;
-    max-width: 37rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
 }
 form input
 {
     border-radius: .3rem;
     padding: .5rem 1.5rem .5rem 1.5rem; /* top right bottom left*/
     min-width: 25rem;
-    flex-shrink: 5;
+    height: 100%;
 }
 
-form > .button
+form .button
 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     min-width: 25rem;
-    flex-shrink: 1;
+    height: 100%;
+    
 }
 
 /*--------------------------------------WELCOME IMAGE--------------------------------------*/
